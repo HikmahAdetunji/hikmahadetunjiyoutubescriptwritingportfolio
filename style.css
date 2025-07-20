@@ -516,7 +516,9 @@ img {
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
   }
-
+  .homebody-text p {
+    font-size: 15px;
+  }
   .homebody-form {
     justify-self: center;
     margin: auto;
