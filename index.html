@@ -15,7 +15,7 @@
   </head>
   <body>
     <!--Navbar-->
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <div class="container flex">
         <h1 class="logo">Hikmah Adetunji</h1>
         <nav>
@@ -39,13 +39,8 @@
         <div class="homebody-text">
           <h2>Hello Potential Client!</h2>
           <p>
-            I'm a creative YouTube scriptwriter with 4 years of experience
-            crafting engaging, informative, and entertaining scripts for content
-            creators in diverse niches. With my scriptwriting, I drive 150,000+
-            views in a single video for a new channel within 2 months. Skilled
-            in storytelling, SEO, and audience retention. Want to create content
-            that will keep your viewers engaged and interested till the last
-            second? You're in the right place!
+            I write YouTube scripts that hook viewers in the first 10 seconds
+            and keep them watching till the end and beyond.
           </p>
           <a href="portfolio.html " class="btn btn-outline">Read More</a>
         </div>
@@ -207,34 +202,6 @@
       </div>
     </section>
 
-    <!--Skills-->
-    <section class="skills">
-      <h2 class="md text-center my-2">What I Offer</h2>
-      <h2>
-        <div class="container flex skills-cards">
-          <div class="card">
-            <h4>Creative Writing</h4>
-          </div>
-
-          <div class="card">
-            <h4>Genuine Research</h4>
-          </div>
-          <div class="card">
-            <h4>Engaging Storytelling</h4>
-          </div>
-          <div class="card">
-            <h4>SEO Optimization</h4>
-          </div>
-          <div class="card">
-            <h4>Audience Engagement</h4>
-          </div>
-          <div class="card">
-            <h4>Effective Communication</h4>
-          </div>
-        </div>
-      </h2>
-    </section>
-
     <!--Work inquiry  -->
 
     <section class="my-2">
@@ -285,5 +252,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

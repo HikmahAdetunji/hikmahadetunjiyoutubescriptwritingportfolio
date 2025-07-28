@@ -48,6 +48,24 @@ img {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  background-color: #fff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled a {
+  color: #333 !important;
+}
+.navbar.scrolled a:hover {
+  color: var(--secondary-color) !important;
+}
+.navbar.scrolled .logo {
+  color: #333 !important;
 }
 .navbar ul {
   display: flex;

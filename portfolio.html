@@ -15,7 +15,7 @@
   </head>
   <body>
     <!--Navbar-->
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <div class="container flex">
         <h1 class="logo">Hikmah Adetunji</h1>
         <nav>
@@ -122,5 +122,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
