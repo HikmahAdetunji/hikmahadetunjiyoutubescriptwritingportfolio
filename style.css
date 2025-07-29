@@ -211,6 +211,10 @@ img {
   transform: translateY(-15px);
 }
 
+.work-inquiry {
+  max-width: 1000px;
+}
+
 /*About*/
 
 .about-main .grid {
@@ -552,6 +556,10 @@ img {
   .about-main .grid > *:nth-child(3),
   .about-main .grid > *:nth-child(4) {
     grid-column: 1;
+  }
+
+  .work-inquiry {
+    max-width: 1000px;
   }
 }
 
